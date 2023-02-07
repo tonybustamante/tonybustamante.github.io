@@ -1,0 +1,7 @@
+site_name: My Docs
+theme:
+  name: material
+site_url: https://tonybustamante.github.com
+nav:
+  - Home: index.md
+  - Article: article.md
