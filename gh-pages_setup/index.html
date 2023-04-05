@@ -341,14 +341,13 @@ mkdocs serve # This will run the server locally otherwise...
 mkdocs build # this will generate the static files under ./site otherwise...
 mkdocs gh-deploy # deploy will automatically generate and deploy static site to gh-pages branch
 </code></pre>
+<ul>
+<li>be sure to add <code>site</code> to ./.gitignore</li>
+</ul>
 <h2 id="old-site">Old site</h2>
-<pre><code># instead of mkdocs new, just run serve from repo
-git clone &lt;repo&gt;
-git serve # again, to preview
-</code></pre>
-<h1 id="makedeploy-changes">make/deploy changes</h1>
-<pre><code># make changes by adding md pages to ./docs and updating mkdocs.yaml
-</code></pre>
+<ul>
+<li>clone site, make changes/add pages under ./docs, re-run gh-deploy</li>
+</ul>
 
 
 
