@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://tonybustamante.github.com/neural_networks_and_deep_learning/</loc>
+         <lastmod>2023-04-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://tonybustamante.github.com/ssl_refresher/</loc>
          <lastmod>2023-04-05</lastmod>
          <changefreq>daily</changefreq>

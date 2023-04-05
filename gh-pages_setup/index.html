@@ -14,14 +14,14 @@
         <link rel="prev" href="..">
       
       
-        <link rel="next" href="../ssl_refresher/">
+        <link rel="next" href="../neural_networks_and_deep_learning/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
-        <title>Setting up github pages - My Docs</title>
+        <title>Setting up github pages w/ mkdocs - My Docs</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#setting-up-github-pages" class="md-skip">
+        <a href="#setting-up-github-pages-w-mkdocs" class="md-skip">
           Skip to content
         </a>
       
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Setting up github pages
+              Setting up github pages w/ mkdocs
             
           </span>
         </div>
@@ -169,7 +169,9 @@
                     
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
       
@@ -191,7 +193,7 @@
   
     <li class="md-nav__item">
       <a href=".." class="md-nav__link">
-        Home
+        Tony Bustamante's Projects
       </a>
     </li>
   
@@ -215,12 +217,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Setting up github pages
+          Setting up github pages w/ mkdocs
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Setting up github pages
+        Setting up github pages w/ mkdocs
       </a>
       
         
@@ -239,16 +241,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#new-pages" class="md-nav__link">
-    New Pages
+  <a href="#new-site-setup" class="md-nav__link">
+    New site setup
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#old-site" class="md-nav__link">
-    Old site
+  <a href="#existing-site-setup" class="md-nav__link">
+    Existing site setup
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latex-support" class="md-nav__link">
+    Latex Support
+  </a>
+  
+    <nav class="md-nav" aria-label="Latex Support">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mathjaxjs" class="md-nav__link">
+    mathjax.js
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#update-mkdocsyml" class="md-nav__link">
+    update mkdocs.yml
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mathjax-block-syntax" class="md-nav__link">
+    MathJax, block syntax
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -256,6 +292,21 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../neural_networks_and_deep_learning/" class="md-nav__link">
+        Neural Networks and Deep Learning
+      </a>
     </li>
   
 
@@ -282,46 +333,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#new-pages" class="md-nav__link">
-    New Pages
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#old-site" class="md-nav__link">
-    Old site
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           
             <div class="md-content" data-md-component="content">
@@ -330,8 +341,8 @@
                   
 
 
-<h1 id="setting-up-github-pages">Setting up github pages</h1>
-<h2 id="new-pages">New Pages</h2>
+<h1 id="setting-up-github-pages-w-mkdocs">Setting up github pages w/ mkdocs</h1>
+<h2 id="new-site-setup">New site setup</h2>
 <pre><code>pip install mkdocs
 pip install mkdocs-material 
 mkdocs new MyDocs
@@ -345,10 +356,50 @@ mkdocs gh-deploy # deploy will automatically generate and deploy static site to 
 <li>be sure to add <code>site</code> to ./.gitignore</li>
 <li>check deployment status on github.com -&gt; project -&gt; actions -&gt; pages-build-deployment</li>
 </ul>
-<h2 id="old-site">Old site</h2>
+<h2 id="existing-site-setup">Existing site setup</h2>
 <ul>
 <li>clone site, make changes/add pages under ./docs, re-run gh-deploy</li>
 </ul>
+<h2 id="latex-support">Latex Support</h2>
+<h3 id="mathjaxjs">mathjax.js</h3>
+<p>./docs/javascript/mathjax.js</p>
+<pre><code>window.MathJax = {
+  tex: {
+    inlineMath: [[&quot;\\(&quot;, &quot;\\)&quot;]],
+    displayMath: [[&quot;\\[&quot;, &quot;\\]&quot;]],
+    processEscapes: true,
+    processEnvironments: true
+  },
+  options: {
+    ignoreHtmlClass: &quot;.*|&quot;,
+    processHtmlClass: &quot;arithmatex&quot;
+  }
+};
+
+document$.subscribe(() =&gt; { 
+  MathJax.typesetPromise()
+})
+</code></pre>
+<h3 id="update-mkdocsyml">update mkdocs.yml</h3>
+<p>./mkdocs.yml</p>
+<pre><code>markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+</code></pre>
+<h3 id="mathjax-block-syntax">MathJax, block syntax</h3>
+<p>Blocks must be enclosed in <span class="arithmatex">\(<span class="arithmatex">\(...\)</span>\)</span> or [...] on separate lines: </p>
+<pre><code>$$
+\operatorname{ker} f=\{g\in G:f(g)=e_{H}\}{\mbox{.}}
+$$
+</code></pre>
+<div class="arithmatex">\[
+\operatorname{ker} f=\{g\in G:f(g)=e_{H}\}{\mbox{.}}
+\]</div>
 
 
 
@@ -386,10 +437,16 @@ mkdocs gh-deploy # deploy will automatically generate and deploy static site to 
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["toc.integrate"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.407015b8.min.js"></script>
+      
+        <script src="../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
   </body>
