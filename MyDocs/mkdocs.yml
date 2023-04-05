@@ -4,4 +4,5 @@ theme:
 site_url: https://tonybustamante.github.com
 nav:
   - Home: index.md
-  - Article: article.md
+  - Setting up github pages: gh-pages_setup.md
+  - Configuring windows git w/ SSH: ssl_refresher.md
